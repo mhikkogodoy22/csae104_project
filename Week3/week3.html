@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Notices</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><img src="bnhs.jpg" alt="DMMMSU Logo"/>Campus Notices</h1>
+    <p class="tagline">Latest announcements and deadlines for students.</p>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#notices">Notices</a></li>
+        <li><a href="#deadlines">Deadlines</a></li>
+        <li><a href="#submit">Post a notice</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="deadlines">
+  <h2>Upcoming deadlines</h2>
+  <table>
+    <caption>Key dates for the second semester</caption>
+    <thead>
+      <tr>
+        <th scope="col">Activity</th>
+        <th scope="col">Date</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Enrollment ends</td>
+        <td>20 January 2027</td>
+        <td><span class="status closing">Closing</span></td>
+      </tr>
+      <tr>
+        <td>Programming contest registration</td>
+        <td>25 January 2027</td>
+        <td><span class="status open">Open</span></td>
+      </tr>
+      <tr>
+        <td>Scholarship application</td>
+        <td>31 January 2027</td>
+      <td><span class="status open">Open</span></td>
+    </tr>
+    <tr>
+      <td>Late enrollment</td>
+      <td>5 February 2027</td>
+      <td><span class="status upcoming">Upcoming</span></td>
+    </tr>
+    </tbody>
+  </table>
+  <p class="table-note">Note: All dates are subject to change. Please check the official university calendar for the most up-to-date information.</p>
+  
+</section>
+    <article class="notice">
+      <h2>Library hours extended</h2>
+      <p class="meta">
+    <time datetime="2026-10-12">12 October 2026</time> · <span class="tag">Academic</span>
+  </p>
+      <p>The library stays open until 9 PM during midterm week.</p>
+      <p>Posted by University Library</p>
+    </article>
+    <article class="notice">
+      <h2>Academic Calendar Changes</h2>
+      <p class="meta">
+    <time datetime="2026-10-12">10 October 2026</time> · <span class="tag">Announcement</span>
+      <p>Please note the changes to the academic calendar. Classes on 3 November are moved to 10 November.</p>
+      <p >Posted by School Registrar</p>
+    </article>
+    <article class="notice">
+      <h2>New book arrivals</h2>
+      <p class="meta">
+    <time datetime="2026-10-12">10 October 2026</time> · <span class="tag">Library</span>
+      <p>Check out the latest additions to our collection, including new titles in computing and engineering.</p>
+      <p class="posted">Posted by School Library</p>
+    </article>
+    <section id="submit">
+  <h2>Post a notice</h2>
+  <form action="#" method="post">
+    <p>
+      <label for="title">Title</label><br>
+      <input type="text" id="title" name="title" required maxlength="100">
+    </p>
+    <p>
+      <label for="category">Category</label><br>
+      <select id="category" name="category">
+        <option value="academic">Academic</option>
+        <option value="event">Event</option>
+        <option value="general">General</option>
+      </select>
+    </p>
+    <p>
+      <label for="date">Date</label><br>
+      <input type="date" id="date" name="date">
+    </p>
+    <p>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </p>
+    <p>
+      <label for="email">Your email</label><br>
+      <input type="email" id="email" name="email" required>
+    </p>
+    <button type="submit">Post notice</button>
+  </form>
+</section>
+  </main>
+  <footer>
+    <p>Bobonan National High School</p>
+  </footer>
+</body>
+</html>
